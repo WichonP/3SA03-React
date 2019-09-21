@@ -44,7 +44,7 @@ refreshPage(){
                         {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} attempt = {this.state.attempt} activationHandler={this.activationHandler}/>)}
                     <p>{this.state.completed? "Answer is : "+this.state.word: ""}</p>
                     <p>{this.state.completed? "You Corrrect!": ""}</p>
-                    <button onClick={this.refreshPage}>Play Again</button>
+                    <p>{this.state.completed? <button onClick={this.refreshPage}>Play Again</button>: ""}</p>
                     
                     
                 </div>

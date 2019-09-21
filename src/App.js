@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import WordCard from './WordCard';
 import './App.css';
 
+var vocab = ["Happy","Lonely","Cute"]
+let randomIndex = parseInt(Math.random() * 3)
 
 
 class App extends Component {
@@ -9,7 +11,7 @@ class App extends Component {
         return ( 
             <div className="App">
                
-                  <WordCard value="Happy"/>
+                  <WordCard value={vocab[randomIndex]}/>
                
             </div>
         );

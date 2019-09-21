@@ -33,14 +33,22 @@ export default class Wordcard extends Component {
             }
         }
 }
+refreshPage(){
+    window.location.reload();
+}
+
         render() {
             return (
                 <div className="App">
                     <p>Attempt : {this.state.attempt}</p>
                         {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} attempt = {this.state.attempt} activationHandler={this.activationHandler}/>)}
                     <p>{this.state.completed? "Answer is : "+this.state.word: ""}</p>
-                    <p>{this.state.completed? "WIN": ""}</p>
+                    <p>{this.state.completed? "You Corrrect!": ""}</p>
+                    <button onClick={this.refreshPage}>Play Again</button>
+                    
+                    
                 </div>
          );
     }
+   
 }

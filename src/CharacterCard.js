@@ -8,6 +8,9 @@ export default class CharacterCard extends Component {
             active: false,
         }
     }
+    refresh = () => {
+        window.location.reload(true)
+    }
     activate = () => {
         if(!this.state.active){
             this.props.activationHandler(this.props.value)

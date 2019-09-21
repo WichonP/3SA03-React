@@ -40,11 +40,11 @@ refreshPage(){
         render() {
             return (
                 <div className="App">
-                    <p>Attempt : {this.state.attempt}</p>
+                    <h1>Attempt : {this.state.attempt}</h1>
                         {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} attempt = {this.state.attempt} activationHandler={this.activationHandler}/>)}
-                    <p>{this.state.completed? "Answer is : "+this.state.word: ""}</p>
-                    <p>{this.state.completed? "You Corrrect!": ""}</p>
-                    <p>{this.state.completed? <button onClick={this.refreshPage}>Play Again</button>: ""}</p>
+                    <p><h1>{this.state.completed? "Answer is : "+this.state.word: ""}</h1></p>
+                    <p><h1>{this.state.completed? "You Corrrect!": ""}</h1></p>
+                    <p><h1>{this.state.completed? <button onClick={this.refreshPage}>Play Again</button>: ""}</h1></p>
                     
                     
                 </div>

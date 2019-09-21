@@ -38,7 +38,8 @@ export default class Wordcard extends Component {
                 <div className="App">
                     <p>Attempt : {this.state.attempt}</p>
                         {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} attempt = {this.state.attempt} activationHandler={this.activationHandler}/>)}
-                    <p>{this.state.completed? this.state.word+"WIN": ""}</p>
+                    <p>{this.state.completed? this.state.word: ""}</p>
+                    <p>{this.state.completed? "WIN": ""}</p>
                 </div>
          );
     }

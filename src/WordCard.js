@@ -45,6 +45,7 @@ refreshPage(){
                     <p><h1>{this.state.completed? "Answer is : "+this.state.word: ""}</h1></p>
                     <p><h1>{this.state.completed? "You Corrrect!": ""}</h1></p>
                     <p><h1>{this.state.completed? <button onClick={this.refreshPage}>Play Again</button>: ""}</h1></p>
+                    <p><h1>{this.state.completed? "นายวิชนม์ พีร์ อินสว่าง 6010110330 sec 01": ""}</h1></p>
                     
                     
                 </div>
